@@ -11,3 +11,4 @@ if __name__ == '__main__':
     print(conn.root)
     print(conn.root.get_answer())
     print(conn.root.the_real_answer_though)
+    print(conn.get_question())
