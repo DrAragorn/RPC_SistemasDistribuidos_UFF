@@ -12,6 +12,10 @@ class MyService(rpyc.Service):
     exposed_the_real_answer_though = 43
     def get_question(self):
         return 'Qual é a cor do cavalo branco de Napoleão?'
+    
+    # Questão 3
+    def exposed_get_sum(self, vector):
+        return sum(vector)
 
 
 if __name__ == '__main__':
