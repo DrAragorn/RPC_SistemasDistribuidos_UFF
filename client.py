@@ -21,5 +21,9 @@ if __name__ == '__main__':
 
     #Questão 3
     num = int(input('Por favor entre o tamanho da lista de números: '))
+    #Questão 4
+    start = time.time()
     vector = list(range(num))
-    print(f'A soma de todos os valores da lista é {conn.root.get_sum(vector)}')
+    sum_vec = conn.root.get_sum(vector)
+    end = time.time()
+    print(f'A soma de todos os valores da lista é {sum_vec}\nDuração da execução do get_sum(): {end-start}  seconds')
