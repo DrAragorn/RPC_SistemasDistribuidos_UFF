@@ -14,9 +14,14 @@ class MyService(rpyc.Service):
     def get_question(self):
         return 'Qual é a cor do cavalo branco de Napoleão?'
     
+    """
     # Questão 3
     def exposed_get_sum(self, vector):
-        #Questão 4
+        return sum(vector)
+    """
+
+    # Questão 4
+    def exposed_get_sum(self, vector):
         start = time.time()
         sum_vec = sum(vector)
         end = time.time()
